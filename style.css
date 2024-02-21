@@ -1,3 +1,79 @@
-#headId {
-  color: green;
+.appLogo {
+  display: block;
+  height: 130px;
+  margin-right: 15px;
+}
+.header {
+  display: flex;
+  background-color: #efebe5;
+  justify-content: center;
+  box-shadow: 10px 5px 5px #ff7e7324;
+}
+
+.navItems {
+  display: flex;
+  list-style: none;
+  margin-top: 36px;
+}
+.listItems {
+  margin: 5px;
+  padding: 15px 30px;
+  font-size: 20px;
+  color: #464040;
+}
+.eczar-SemiBold {
+  font-family: "Eczar", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.eczar-normal {
+  font-family: "Eczar", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 70px;
+}
+.bgImage {
+  width: 100%;
+  height: auto;
+}
+.bodyContainer {
+  position: relative;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #efebe5;
+}
+.searchBar {
+  background: #ffffff52 url("./src/images/search.svg") no-repeat 97%;
+  width: 65%;
+  height: 56px;
+  border-radius: 18px;
+  border: none;
+  background-size: 28px;
+  padding: 0px 25px;
+  color: #efebe5;
+  font-size: 25px;
+}
+input:focus-visible {
+  outline: 0px;
+}
+::placeholder {
+  color: #efebe5;
+  font-family: "Eczar", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  opacity: 1; /* Firefox */
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .bgImage {
+    width: 100%;
+    max-height: 800px;
+  }
 }
