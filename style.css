@@ -1,3 +1,8 @@
+.bodyContainer {
+  margin: 0 auto;
+  max-width: 2000px;
+  width: 100%;
+}
 .appLogo {
   display: block;
   height: 130px;
@@ -43,7 +48,7 @@
 }
 .centered {
   position: absolute;
-  top: 50%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #efebe5;
@@ -70,10 +75,66 @@ input:focus-visible {
   font-style: normal;
   opacity: 1; /* Firefox */
 }
+.res-card {
+  border: 1px solid #efebe5;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.vendor-list-revamp {
+  grid-gap: 70px;
+  display: grid;
+  grid-template-rows: minmax(180px, 1fr);
+  list-style: none;
+  padding: 0px 40px;
+}
+.res-name-rate {
+  display: flex;
+  justify-content: space-between;
+}
+.vendor-tile-info {
+  margin: 12px;
+  margin-top: 8px;
+  font-size: x-large;
+}
+.vendor-image-tile {
+  width: 100%;
+  height: auto;
+  border-radius: 14px 14px 0 0;
+}
+.time-tile {
+  font-size: large;
+  font-weight: 200;
+  display: flex;
+  justify-content: flex-start;
+}
+.vendor-list-li {
+  transition: transform 0.2s;
+  overflow: hidden;
+}
+.vendor-list-li:hover {
+  .vendor-image-tile {
+    transform: scale(1.05);
+  }
+}
+
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .bgImage {
     width: 100%;
     max-height: 800px;
+  }
+  .vendor-list-revamp {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .vendor-list-revamp > li {
+    grid-column: span 2;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .vendor-list-revamp {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .vendor-list-revamp > li {
+    grid-column: span 3;
   }
 }
