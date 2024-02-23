@@ -95,6 +95,7 @@ input:focus-visible {
   margin: 12px;
   margin-top: 8px;
   font-size: x-large;
+  font-weight: 100;
 }
 .vendor-image-tile {
   width: 100%;
