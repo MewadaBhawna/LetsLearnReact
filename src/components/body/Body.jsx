@@ -18,7 +18,7 @@ const Body = () => {
       </div>
 
       <div style={{ padding: " 15px" }} className="eczar-SemiBold">
-        <span style={{ "font-size": "xx-large" }}>All restaurants</span>
+        <span style={{ "font-size": "24px" }}>All restaurants</span>
         <ul className="vendor-list-revamp">
           {ResData.map((item) => {
             return (
