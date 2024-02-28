@@ -84,7 +84,6 @@ input:focus-visible {
   border: 1px solid #efebe5;
   border-radius: 15px;
   cursor: pointer;
-  height: 360px;
 }
 .vendor-list-revamp {
   grid-gap: 60px;
@@ -100,7 +99,6 @@ input:focus-visible {
 .vendor-tile-info {
   margin: 12px;
   margin-top: 8px;
-  font-size: x-large;
   font-weight: 100;
 }
 .vendor-image-tile {
@@ -109,8 +107,6 @@ input:focus-visible {
   border-radius: 14px 14px 0 0;
 }
 .time-tile {
-  font-size: large;
-  font-weight: 200;
   display: flex;
   justify-content: flex-start;
 }
@@ -125,7 +121,7 @@ input:focus-visible {
 }
 .text-style-card {
   color: #6d6d6d;
-  font-size: large;
+  font-size: 18px;
   font-weight: normal;
   text-overflow: ellipsis;
   overflow: hidden;
