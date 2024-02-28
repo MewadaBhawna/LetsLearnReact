@@ -2,7 +2,6 @@ import React from "react";
 import Star from "../../images/star.svg";
 import Time from "../../images/time.svg";
 import Delivery from "../../images/delivery.svg";
-import CompanyLogo from "../../images/appLogo.jpeg";
 
 const RestuarantCard = (props) => {
   const { resDetails } = props;
@@ -14,8 +13,8 @@ const RestuarantCard = (props) => {
         src={resDetails.image.url}
       />
       <div className="vendor-tile-info">
-        <div className="res-name-rate">
-          <div>{resDetails.title}</div>
+        <div className="res-name-rate text-style-card">
+          <div className="text-font">{resDetails.title}</div>
           <div>
             <img className="rating" alt="rating" src={Star} />
             <span style={{ color: "#ff7e73" }}>
@@ -23,8 +22,10 @@ const RestuarantCard = (props) => {
             </span>
           </div>
         </div>
-        <div>{resDetails.venue.short_description}</div>
-        <div className="time-tile">
+        <div className="text-style-card">
+          {resDetails.venue.short_description}
+        </div>
+        <div className="time-tile text-style-card ">
           <div>
             <img style={{ "margin-right": "5px" }} alt="time" src={Time} />
             {resDetails.venue.estimate_box.title}{" "}
